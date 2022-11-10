@@ -7,7 +7,7 @@ char change;
 
 void endOfProgram()
 {
-	cout << "Ð’Ñ‹ Ð²Ñ‹ÑˆÐ»Ð¸ Ð¸Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹. Ð’ÑÐµÐ³Ð¾ Ñ…Ð¾Ñ€Ð¾-ÑˆÐµ-Ð³Ð¾ :)" << endl;
+	cout << "Âû âûøëè èç ïðîãðàììû. Âñåãî õîðî-øå-ãî :)" << endl;
 	system("pause");
 	exit(0);
 }
@@ -18,7 +18,7 @@ int main()
 
 	creationSelection:
 
-	cout << "Ð’Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ Ð½Ð¾Ð²Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ?" << endl << "Ð•ÑÐ»Ð¸ Ð´Ð°, Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ 'y', ÐµÑÐ»Ð¸ Ð½ÐµÑ‚, Ñ‚Ð¾ 'n'" << endl;
+	cout << "Âû õîòèòå ñîçäàòü íîâûé êëàññ?" << endl << "Åñëè äà, íàæìèòå 'y', åñëè íåò, òî 'n'" << endl;
 	while (change != 'y' && change != 'n')
 	{
 		cin >> change;
@@ -41,7 +41,7 @@ int main()
 			break;
 		case 2:
 			amount = Car->amountOfObjects();
-			cout << "Ð¡ÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚ " << amount << " Ð¾Ð±ÑŠÐµÐºÑ‚Ð°(Ð¾Ð²) ÐºÐ»Ð°ÑÑÐ°" << endl;
+			cout << "Ñóùåñòâóåò " << amount << " îáúåêòà(îâ) êëàññà" << endl;
 			break;
 		case 3:
 			Car->addAnObject();

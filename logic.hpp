@@ -1,18 +1,18 @@
-/*Р”Р»СЏ СЂРµР°Р»РёР·Р°С†РёРё СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С… РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚РёРїС‹ РґР°РЅРЅС‹С… "СЃС‚СЂСѓРєС‚СѓСЂР°" Рё "СѓРєР°Р·Р°С‚РµР»СЊ".
-Р‘Р°Р·РѕРІС‹Рµ РѕРїРµСЂР°С†РёРё СЂРµР°Р»РёР·РѕРІР°С‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ С„СѓРЅРєС†РёР№ Рё/РёР»Рё РїСЂРѕС†РµРґСѓСЂ.
-РЎРѕР·РґР°С‚СЊ Рё РїСЂРѕРґРµРјРѕРЅСЃС‚СЂРёСЂРѕРІР°С‚СЊ РїСЂРµРїРѕРґР°РІР°С‚РµР»СЋ РїСЂРѕРіСЂР°РјРјСѓ, СЂРµР°Р»РёР·СѓСЋС‰СѓСЋ РїСЂРёРјРµРЅРµРЅРёРµ СЂР°Р·СЂР°Р±РѕС‚Р°РЅРЅРѕР№ СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С….
-РСЃС…РѕРґРЅС‹Р№ РєРѕРґ Рё РёСЃРїРѕР»РЅСЏРµРјС‹Р№ С„Р°Р№Р» РїСЂРѕРіСЂР°РјРјС‹ СЃ СѓРєР°Р·Р°РЅРёРµРј РєРѕРјРїРёР»СЏС‚РѕСЂР° РїСЂРёРєСЂРµРїРёС‚СЊ РІ РєР°С‡РµСЃС‚РІРµ РѕС‚РІРµС‚Р°.
-РљРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ СЃС‚СЂСѓРєС‚СѓСЂРµ РґР°РЅРЅС‹С… С…СЂР°РЅРёС‚СЊСЃСЏ РЅРµ РґРѕР»Р¶РЅРѕ.*/
+/*Для реализации структуры данных использовать типы данных "структура" и "указатель".
+Базовые операции реализовать с помощью функций и/или процедур.
+Создать и продемонстрировать преподавателю программу, реализующую применение разработанной структуры данных.
+Исходный код и исполняемый файл программы с указанием компилятора прикрепить в качестве ответа.
+Количество элементов в структуре данных храниться не должно.*/
 
-//Р РµР°Р»РёР·РѕРІР°С‚СЊ РѕРґРЅРѕРѕСЃРІСЏР·РЅС‹Р№ Р»РёРЅРµР№РЅС‹Р№ СЃРїРёСЃРѕРє 
-//РџСЂРѕРІРµСЂРєР° РЅР° РЅР°Р»РёС‡РёРµ СЌР»РµРјРµРЅС‚РѕРІ РІ СЃС‚СЂСѓРєС‚СѓСЂРµ РґР°РЅРЅС‹С…
-//РџРѕР»СѓС‡РµРЅРёРµ РєРѕР»РёС‡РµСЃС‚РІР° СЌР»РµРјРµРЅС‚РѕРІ  РІ СЃС‚СЂСѓРєС‚СѓСЂРµ РґР°РЅРЅС‹С…
-//Р”РѕР±Р°РІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°  РІ СЃС‚СЂСѓРєС‚СѓСЂСѓ РґР°РЅРЅС‹С…
-//Р’СЃС‚Р°РІРєР° СЌР»РµРјРµРЅС‚Р° РІ СЃС‚СЂСѓРєС‚СѓСЂСѓ РґР°РЅРЅС‹С… РїРѕСЃР»Рµ С‚РµРєСѓС‰РµРіРѕ
-//РЈРґР°Р»РµРЅРёРµ С‚РµРєСѓС‰РµРіРѕ СЌР»РµРјРµРЅС‚Р° СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С…
-//РћС‡РёСЃС‚РєР° СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С…
-//РџРµСЂРµРјРµС‰РµРЅРёРµ РїРѕ СЌР»РµРјРµРЅС‚Р°Рј СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С…
-//Р§С‚РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РёР· С‚РµРєСѓС‰РµРіРѕ СЌР»РµРјРµРЅС‚Р° СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С…
+//Реализовать одноосвязный линейный список 
+//Проверка на наличие элементов в структуре данных
+//Получение количества элементов  в структуре данных
+//Добавление элемента  в структуру данных
+//Вставка элемента в структуру данных после текущего
+//Удаление текущего элемента структуры данных
+//Очистка структуры данных
+//Перемещение по элементам структуры данных
+//Чтение информации из текущего элемента структуры данных
 
 #include <iostream>
 #include <string>
@@ -22,15 +22,15 @@ using namespace std;
 int menu()
 {
 	int change;
-	cout << "1. РџСЂРѕРІРµСЂРєР° РЅР° РЅР°Р»РёС‡РёРµ СЌР»РµРјРµРЅС‚РѕРІ РІ СЃС‚СЂСѓРєС‚СѓСЂРµ РґР°РЅРЅС‹С…" << endl;
-	cout << "2. РџРѕР»СѓС‡РµРЅРёРµ РєРѕР»РёС‡РµСЃС‚РІР° СЌР»РµРјРµРЅС‚РѕРІ  РІ СЃС‚СЂСѓРєС‚СѓСЂРµ РґР°РЅРЅС‹С…" << endl;
-    cout << "3. Р”РѕР±Р°РІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°  РІ СЃС‚СЂСѓРєС‚СѓСЂСѓ РґР°РЅРЅС‹С…" << endl;
-    cout << "4. Р’СЃС‚Р°РІРєР° СЌР»РµРјРµРЅС‚Р° РІ СЃС‚СЂСѓРєС‚СѓСЂСѓ РґР°РЅРЅС‹С… РїРѕСЃР»Рµ С‚РµРєСѓС‰РµРіРѕ" << endl;
-    cout << "5. РЈРґР°Р»РµРЅРёРµ С‚РµРєСѓС‰РµРіРѕ СЌР»РµРјРµРЅС‚Р° СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С…" << endl;
-    cout << "6. РћС‡РёСЃС‚РєР° СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С…" << endl;
-    cout << "7. РџРµСЂРµРјРµС‰РµРЅРёРµ РїРѕ СЌР»РµРјРµРЅС‚Р°Рј СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С…" << endl;
-    cout << "8. Р§С‚РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РёР· С‚РµРєСѓС‰РµРіРѕ СЌР»РµРјРµРЅС‚Р° СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С…" << endl;
-    cout << "9. Р’С‹С…РѕРґ РёР· РїСЂРѕРіСЂР°РјРјС‹" << endl << endl;
+	cout << "1. Проверка на наличие элементов в структуре данных" << endl;
+	cout << "2. Получение количества элементов  в структуре данных" << endl;
+    cout << "3. Добавление элемента  в структуру данных" << endl;
+    cout << "4. Вставка элемента в структуру данных после текущего" << endl;
+    cout << "5. Удаление текущего элемента структуры данных" << endl;
+    cout << "6. Очистка структуры данных" << endl;
+    cout << "7. Перемещение по элементам структуры данных" << endl;
+    cout << "8. Чтение информации из текущего элемента структуры данных" << endl;
+    cout << "9. Выход из программы" << endl << endl;
 	cin >> change;
     cout << endl;
 	return change;
@@ -102,18 +102,19 @@ public:
 class carInfo
 {
 protected:
-    int yearFactory; //Р“РѕРґ РІС‹РїСѓСЃРєР°
-    int fuelTankCapacity; //РћР±СЉС‘Рј С‚РѕРїР»РёРІРЅРѕРіРѕ Р±Р°РєР°
-    int maxSpeed; //РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ
-    int horsePower; //РљРѕР»-РІРѕ Р»РѕС€Р°РґРёРЅС‹С… СЃРёР»
-    int engineCapacity; //РћР±СЉС‘Рј РґРІРёРіР°С‚РµР»СЏ
-    bool spareWheel; //РќР°Р»РёС‡РёРµ Р·Р°РїР°СЃРЅС‹С… РєРѕР»С‘СЃ
-    bool configuration; //РљРѕРјРїР»РµРєС‚Р°С†РёСЏ
-    string carBrand; //РњР°СЂРєР°
-    string color; //Р¦РІРµС‚
-    string bodyType; //РўРёРї РєСѓР·РѕРІР°
+    int yearFactory; //Год выпуска
+    int fuelTankCapacity; //Объём топливного бака
+    int maxSpeed; //Максимальная скорость
+    int horsePower; //Кол-во лошадиных сил
+    int engineCapacity; //Объём двигателя
+    bool spareWheel; //Наличие запасных колёс
+    bool configuration; //Комплектация
+    string carBrand; //Марка
+    string color; //Цвет
+    string bodyType; //Тип кузова
+    carInfo* next; // Ccылка на след. объект
 public:
-    carInfo* next; // CcС‹Р»РєР° РЅР° СЃР»РµРґ. РѕР±СЉРµРєС‚
+    
 
     carInfo(int factory, int fuel, int speed, int power, int engine, bool wheel ,bool conf, string brand, string color, string type)
     {
@@ -147,24 +148,23 @@ public:
 
     void getCarInfo()
     {
-        cout << "Р’С‹РІРѕРґРёС‚СЃСЏ СЌР»РµРјРµРЅС‚: 0x" << this << endl << endl;
-        cout << "РЎР»РµРґСѓСЋС‰РёР№ СЌР»РµРјРµРЅС‚: 0x" << this->next << endl << endl;
-        cout << "Р“РѕРґ РІС‹РїСѓСЃРєР°: " << yearFactory << endl;
-        cout << "РћР±СЉС‘Рј С‚РѕРїР»РёРІРЅРѕРіРѕ Р±Р°РєР°: " << fuelTankCapacity << endl;
-        cout << "РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ: " << maxSpeed << endl;
-        cout << "РљРѕР»-РІРѕ Р»Р°С€РґРёРЅС‹С… СЃРёР»: " << horsePower << endl;
-        cout << "РћР±СЉС‘Рј РґРІРёРіР°С‚РµР»СЏ: " << engineCapacity << endl;
-        cout << "РќР°Р»РёС‡РёРµ Р·Р°РїР°СЃРЅС‹С… РєРѕР»С‘СЃ: " << spareWheel << " (1 - РµСЃС‚СЊ РІ РЅР°Р»РёС‡РёРё; 0 - РЅРµС‚ РІ РЅР°Р»РёС‡РёРё)" << endl;
-        cout << "РљРѕРјРїР»РµРєС‚Р°С†РёСЏ: " << configuration<< " (1 - РїРѕР»РЅР°СЏ, 0 - РЅРµ РїРѕР»РЅР°СЏ)" << endl;
-        cout << "РњР°СЂРєР° Р°РІС‚РѕРјРѕР±РёР»СЏ: " << carBrand << endl;
-        cout << "Р¦РІРµС‚ Р°РІС‚РѕРјРѕР±РёР»СЏ: " << color << endl;
-        cout << "РўРёРї РєСѓР·РѕРІР° Р°РІС‚РѕРјРѕР±РёР»СЏ: " << bodyType << endl << endl;
+        cout << "Выводится элемент: 0x" << this << endl << endl;
+        cout << "Следующий элемент: 0x" << this->next << endl << endl;
+        cout << "Год выпуска: " << yearFactory << endl;
+        cout << "Объём топливного бака: " << fuelTankCapacity << endl;
+        cout << "Максимальная скорость: " << maxSpeed << endl;
+        cout << "Кол-во лашдиных сил: " << horsePower << endl;
+        cout << "Объём двигателя: " << engineCapacity << endl;
+        cout << "Наличие запасных колёс: " << spareWheel << " (1 - есть в наличии; 0 - нет в наличии)" << endl;
+        cout << "Комплектация: " << configuration<< " (1 - полная, 0 - не полная)" << endl;
+        cout << "Марка автомобиля: " << carBrand << endl;
+        cout << "Цвет автомобиля: " << color << endl;
+        cout << "Тип кузова автомобиля: " << bodyType << endl << endl;
     }
 
     ~carInfo()
     {
-        cout << "Р Р°Р±РѕС‚Р°РµС‚ РґРёСЃС‚СЂСѓРєС‚РѕСЂ РѕР±СЉРµРєС‚Р° РєР»Р°СЃСЃР°" << endl;
-        
+        cout << "Сработал деструктор объекта класса" << endl; 
     }
 
     carInfo* getNext()
@@ -173,6 +173,105 @@ public:
         address = this->next;
         return address;
     }
+
+    void insertAnObject()
+    {
+        int yearFactory; //Год выпуска
+        int fuelTankCapacity; //Объём топливного бака
+        int maxSpeed; //Максимальная скорость
+        int horsePower; //Кол-во лошадиных сил
+        int engineCapacity; //Объём двигателя
+        bool spareWheel; //Наличие запасных колёс
+        bool configuration; //Комплектация
+        string carBrand; //Марка
+        string color; //Цвет
+        string bodyType; //Тип кузова
+
+        cout << endl << "Введите год выпуска:" << endl;
+        cin_fool >> yearFactory;
+
+        cout << "Введите объём топливного бака:" << endl;
+        cin_fool >> fuelTankCapacity;
+
+        cout << "Введите максимальную скорость авто:" << endl;
+        cin_fool >> maxSpeed;
+
+        cout << "Введите количество лошадиных сил:" << endl;
+        cin_fool >> horsePower;
+
+        cout << "Введите объём двигателя:" << endl;
+        cin_fool >> engineCapacity;
+
+        cout << "Наличие запасных колёс: 0 - нет, 1 - да" << endl;
+        cin_fool >> spareWheel;
+
+        cout << "Введите тип комплектации авто: 0 - не полная, 1 - полная" << endl;
+        cin_fool >> configuration;
+
+        cout << "Введите марку авто:" << endl;
+        getline(cin, carBrand);
+        cout << "Введите цвет авто:" << endl;
+        getline(cin, color);
+        cout << "Введите тип кузова авто:" << endl;
+        getline(cin, bodyType);
+        cout << endl;
+
+        carInfo* tmp;
+        tmp = this->next;
+        this->next = new carInfo(yearFactory, fuelTankCapacity, maxSpeed, horsePower, engineCapacity, spareWheel, configuration, carBrand, color, bodyType, tmp);
+    }
+
+    void addAnObject()
+    {
+        int yearFactory; //Год выпуска
+        int fuelTankCapacity; //Объём топливного бака
+        int maxSpeed; //Максимальная скорость
+        int horsePower; //Кол-во лошадиных сил
+        int engineCapacity; //Объём двигателя
+        bool spareWheel; //Наличие запасных колёс
+        bool configuration; //Комплектация
+        string carBrand; //Марка
+        string color; //Цвет
+        string bodyType; //Тип кузова
+
+        cout << endl << "Введите год выпуска:" << endl;
+        cin_fool >> yearFactory;
+
+        cout << "Введите объём топливного бака:" << endl;
+        cin_fool >> fuelTankCapacity;
+
+        cout << "Введите максимальную скорость авто:" << endl;
+        cin_fool >> maxSpeed;
+
+        cout << "Введите количество лошадиных сил:" << endl;
+        cin_fool >> horsePower;
+
+        cout << "Введите объём двигателя:" << endl;
+        cin_fool >> engineCapacity;
+
+        cout << "Наличие запасных колёс: 0 - нет, 1 - да" << endl;
+        cin_fool >> spareWheel;
+
+        cout << "Введите тип комплектации авто: 0 - не полная, 1 - полная" << endl;
+        cin_fool >> configuration;
+
+        cout << "Введите марку авто:" << endl;
+        getline(cin, carBrand);
+        cout << "Введите цвет авто:" << endl;
+        getline(cin, color);
+        cout << "Введите тип кузова авто:" << endl;
+        getline(cin, bodyType);
+        cout << endl;
+
+        this->next = new carInfo(yearFactory, fuelTankCapacity, maxSpeed, horsePower, engineCapacity, spareWheel, configuration, carBrand, color, bodyType);
+    }
+
+    void deleteAnObject(carInfo* address)
+    {
+        delete this->next;
+        this->next = address;
+    }
+
 };
 
 class car
@@ -191,69 +290,69 @@ public:
         carInfo* tmp;
         while (start)
         {
-            cout << "РЈРґР°Р»РµРЅРёРµ РѕР±СЉРµРєС‚Р°: " << start << endl;
-            tmp = start->next;
+            cout << "Удаление объекта: " << start << endl;
+            tmp = start->getNext();
             delete start;
             start = tmp;
         }
-        cout << "Р”РµСЃС‚СЂСѓРєС‚РѕСЂ Р·Р°РІРµСЂС€РёР» СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ" << endl << endl;
+        cout << "Деструктор завершил свою работу" << endl << endl;
     }
 
     void emptyCar()
     {
         if (now == NULL && start == NULL)
-            cout << "Р­Р»РµРјРµРЅС‚С‹ РЅРµ РѕР±РЅР°СЂСѓР¶РµРЅС‹" << endl;
+            cout << "Элементы не обнаружены" << endl;
         else
-            cout << "РЈ РґР°РЅРЅРѕРіРѕ РєР»Р°СЃСЃР° РµСЃС‚СЊ СЌР»РµРјРµРЅС‚С‹" << endl << endl;
+            cout << "У данного класса есть элементы" << endl << endl;
     }
 
     void moveNext()
     {
-        if (now->next == NULL)
+        if (now->getNext() == NULL)
             now = start;
         else
-            now = now->next;
+            now = now->getNext();
     }
 
     void create()
     {
-        int yearFactory; //Р“РѕРґ РІС‹РїСѓСЃРєР°
-        int fuelTankCapacity; //РћР±СЉС‘Рј С‚РѕРїР»РёРІРЅРѕРіРѕ Р±Р°РєР°
-        int maxSpeed; //РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ
-        int horsePower; //РљРѕР»-РІРѕ Р»РѕС€Р°РґРёРЅС‹С… СЃРёР»
-        int engineCapacity; //РћР±СЉС‘Рј РґРІРёРіР°С‚РµР»СЏ
-        bool spareWheel; //РќР°Р»РёС‡РёРµ Р·Р°РїР°СЃРЅС‹С… РєРѕР»С‘СЃ
-        bool configuration; //РљРѕРјРїР»РµРєС‚Р°С†РёСЏ
-        string carBrand; //РњР°СЂРєР°
-        string color; //Р¦РІРµС‚
-        string bodyType; //РўРёРї РєСѓР·РѕРІР°
+        int yearFactory; //Год выпуска
+        int fuelTankCapacity; //Объём топливного бака
+        int maxSpeed; //Максимальная скорость
+        int horsePower; //Кол-во лошадиных сил
+        int engineCapacity; //Объём двигателя
+        bool spareWheel; //Наличие запасных колёс
+        bool configuration; //Комплектация
+        string carBrand; //Марка
+        string color; //Цвет
+        string bodyType; //Тип кузова
         
-        cout << endl << "Р’РІРµРґРёС‚Рµ РіРѕРґ РІС‹РїСѓСЃРєР°:" << endl;
+        cout << endl << "Введите год выпуска:" << endl;
         cin_fool >> yearFactory;
         
-        cout << "Р’РІРµРґРёС‚Рµ РѕР±СЉС‘Рј С‚РѕРїР»РёРІРЅРѕРіРѕ Р±Р°РєР°:" << endl;
+        cout << "Введите объём топливного бака:" << endl;
         cin_fool >> fuelTankCapacity;
 
-        cout << "Р’РІРµРґРёС‚Рµ РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ СЃРєРѕСЂРѕСЃС‚СЊ Р°РІС‚Рѕ:" << endl;
+        cout << "Введите максимальную скорость авто:" << endl;
         cin_fool >> maxSpeed;
 
-        cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р»РѕС€Р°РґРёРЅС‹С… СЃРёР»:" << endl;
+        cout << "Введите количество лошадиных сил:" << endl;
         cin_fool >> horsePower;
 
-        cout << "Р’РІРµРґРёС‚Рµ РѕР±СЉС‘Рј РґРІРёРіР°С‚РµР»СЏ:" << endl;
+        cout << "Введите объём двигателя:" << endl;
         cin_fool >> engineCapacity;
 
-        cout << "РќР°Р»РёС‡РёРµ Р·Р°РїР°СЃРЅС‹С… РєРѕР»С‘СЃ: 0 - РЅРµС‚, 1 - РґР°" << endl;
+        cout << "Наличие запасных колёс: 0 - нет, 1 - да" << endl;
         cin_fool >> spareWheel;
 
-        cout << "Р’РІРµРґРёС‚Рµ С‚РёРї РєРѕРјРїР»РµРєС‚Р°С†РёРё Р°РІС‚Рѕ: 0 - РЅРµ РїРѕР»РЅР°СЏ, 1 - РїРѕР»РЅР°СЏ" << endl;
+        cout << "Введите тип комплектации авто: 0 - не полная, 1 - полная" << endl;
         cin_fool >> configuration;
 
-        cout << "Р’РІРµРґРёС‚Рµ РјР°СЂРєСѓ Р°РІС‚Рѕ:" << endl;
+        cout << "Введите марку авто:" << endl;
         getline(cin, carBrand);
-        cout << "Р’РІРµРґРёС‚Рµ С†РІРµС‚ Р°РІС‚Рѕ:" << endl;
+        cout << "Введите цвет авто:" << endl;
         getline(cin, color);
-        cout << "Р’РІРµРґРёС‚Рµ С‚РёРї РєСѓР·РѕРІР° Р°РІС‚Рѕ:" << endl;
+        cout << "Введите тип кузова авто:" << endl;
         getline(cin, bodyType);
         cout << endl;
         this->start = new carInfo(yearFactory, fuelTankCapacity, maxSpeed, horsePower, engineCapacity, spareWheel, configuration, carBrand, color, bodyType);
@@ -272,8 +371,8 @@ public:
         int amount = 0;
         do{
             amount++;
-            if (tmp->next != NULL)
-                tmp = tmp->next;
+            if (tmp->getNext() != NULL)
+                tmp = tmp->getNext();
             else break;
         } while (true);
         return amount;
@@ -281,114 +380,62 @@ public:
 
     void addAnObject()
     {
-        int yearFactory; //Р“РѕРґ РІС‹РїСѓСЃРєР°
-        int fuelTankCapacity; //РћР±СЉС‘Рј С‚РѕРїР»РёРІРЅРѕРіРѕ Р±Р°РєР°
-        int maxSpeed; //РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ
-        int horsePower; //РљРѕР»-РІРѕ Р»РѕС€Р°РґРёРЅС‹С… СЃРёР»
-        int engineCapacity; //РћР±СЉС‘Рј РґРІРёРіР°С‚РµР»СЏ
-        bool spareWheel; //РќР°Р»РёС‡РёРµ Р·Р°РїР°СЃРЅС‹С… РєРѕР»С‘СЃ
-        bool configuration; //РљРѕРјРїР»РµРєС‚Р°С†РёСЏ
-        string carBrand; //РњР°СЂРєР°
-        string color; //Р¦РІРµС‚
-        string bodyType; //РўРёРї РєСѓР·РѕРІР°
-
-        cout << endl << "Р’РІРµРґРёС‚Рµ РіРѕРґ РІС‹РїСѓСЃРєР°:" << endl;
-        cin_fool >> yearFactory;
-
-        cout << "Р’РІРµРґРёС‚Рµ РѕР±СЉС‘Рј С‚РѕРїР»РёРІРЅРѕРіРѕ Р±Р°РєР°:" << endl;
-        cin_fool >> fuelTankCapacity;
-
-        cout << "Р’РІРµРґРёС‚Рµ РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ СЃРєРѕСЂРѕСЃС‚СЊ Р°РІС‚Рѕ:" << endl;
-        cin_fool >> maxSpeed;
-
-        cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р»РѕС€Р°РґРёРЅС‹С… СЃРёР»:" << endl;
-        cin_fool >> horsePower;
-
-        cout << "Р’РІРµРґРёС‚Рµ РѕР±СЉС‘Рј РґРІРёРіР°С‚РµР»СЏ:" << endl;
-        cin_fool >> engineCapacity;
-
-        cout << "РќР°Р»РёС‡РёРµ Р·Р°РїР°СЃРЅС‹С… РєРѕР»С‘СЃ: 0 - РЅРµС‚, 1 - РґР°" << endl;
-        cin_fool >> spareWheel;
-
-        cout << "Р’РІРµРґРёС‚Рµ С‚РёРї РєРѕРјРїР»РµРєС‚Р°С†РёРё Р°РІС‚Рѕ: 0 - РЅРµ РїРѕР»РЅР°СЏ, 1 - РїРѕР»РЅР°СЏ" << endl;
-        cin_fool >> configuration;
-
-        cout << "Р’РІРµРґРёС‚Рµ РјР°СЂРєСѓ Р°РІС‚Рѕ:" << endl;
-        getline(cin, carBrand);
-        cout << "Р’РІРµРґРёС‚Рµ С†РІРµС‚ Р°РІС‚Рѕ:" << endl;
-        getline(cin, color);
-        cout << "Р’РІРµРґРёС‚Рµ С‚РёРї РєСѓР·РѕРІР° Р°РІС‚Рѕ:" << endl;
-        getline(cin, bodyType);
-        cout << endl;
-        
         carInfo* tmp;
         tmp = now;
         do {
-            if (tmp->next != NULL)
-                tmp = tmp->next;
+            if (tmp->getNext() != NULL)
+                tmp = tmp->getNext();
             else break;
         } while (true);
-
-        tmp->next = new carInfo(yearFactory, fuelTankCapacity, maxSpeed, horsePower, engineCapacity, spareWheel, configuration, carBrand, color, bodyType);
+        tmp->addAnObject();        
     }
 
     void insertAnObject()
     {
-        int yearFactory; //Р“РѕРґ РІС‹РїСѓСЃРєР°
-        int fuelTankCapacity; //РћР±СЉС‘Рј С‚РѕРїР»РёРІРЅРѕРіРѕ Р±Р°РєР°
-        int maxSpeed; //РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ
-        int horsePower; //РљРѕР»-РІРѕ Р»РѕС€Р°РґРёРЅС‹С… СЃРёР»
-        int engineCapacity; //РћР±СЉС‘Рј РґРІРёРіР°С‚РµР»СЏ
-        bool spareWheel; //РќР°Р»РёС‡РёРµ Р·Р°РїР°СЃРЅС‹С… РєРѕР»С‘СЃ
-        bool configuration; //РљРѕРјРїР»РµРєС‚Р°С†РёСЏ
-        string carBrand; //РњР°СЂРєР°
-        string color; //Р¦РІРµС‚
-        string bodyType; //РўРёРї РєСѓР·РѕРІР°
-
-        cout << endl << "Р’РІРµРґРёС‚Рµ РіРѕРґ РІС‹РїСѓСЃРєР°:" << endl;
-        cin_fool >> yearFactory;
-
-        cout << "Р’РІРµРґРёС‚Рµ РѕР±СЉС‘Рј С‚РѕРїР»РёРІРЅРѕРіРѕ Р±Р°РєР°:" << endl;
-        cin_fool >> fuelTankCapacity;
-
-        cout << "Р’РІРµРґРёС‚Рµ РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ СЃРєРѕСЂРѕСЃС‚СЊ Р°РІС‚Рѕ:" << endl;
-        cin_fool >> maxSpeed;
-
-        cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р»РѕС€Р°РґРёРЅС‹С… СЃРёР»:" << endl;
-        cin_fool >> horsePower;
-
-        cout << "Р’РІРµРґРёС‚Рµ РѕР±СЉС‘Рј РґРІРёРіР°С‚РµР»СЏ:" << endl;
-        cin_fool >> engineCapacity;
-
-        cout << "РќР°Р»РёС‡РёРµ Р·Р°РїР°СЃРЅС‹С… РєРѕР»С‘СЃ: 0 - РЅРµС‚, 1 - РґР°" << endl;
-        cin_fool >> spareWheel;
-
-        cout << "Р’РІРµРґРёС‚Рµ С‚РёРї РєРѕРјРїР»РµРєС‚Р°С†РёРё Р°РІС‚Рѕ: 0 - РЅРµ РїРѕР»РЅР°СЏ, 1 - РїРѕР»РЅР°СЏ" << endl;
-        cin_fool >> configuration;
-
-        cout << "Р’РІРµРґРёС‚Рµ РјР°СЂРєСѓ Р°РІС‚Рѕ:" << endl;
-        getline(cin, carBrand);
-        cout << "Р’РІРµРґРёС‚Рµ С†РІРµС‚ Р°РІС‚Рѕ:" << endl;
-        getline(cin, color);
-        cout << "Р’РІРµРґРёС‚Рµ С‚РёРї РєСѓР·РѕРІР° Р°РІС‚Рѕ:" << endl;
-        getline(cin, bodyType);
-        cout << endl;
-
-        carInfo* address = nullptr;
-        address = now->getNext();
-        now->next = new carInfo(yearFactory, fuelTankCapacity, maxSpeed, horsePower, engineCapacity, spareWheel, configuration, carBrand, color, bodyType, address);
+        now->insertAnObject();
     }
 
     void deleteAnObject()
     {
-        carInfo* tmp = nullptr;
+        carInfo* tmp;
+        if (now != start)
+        {
+            carInfo* address;
+            address = now->getNext();
+            tmp = start;
+            while (tmp->getNext() != now)
+            {
+                tmp = tmp->getNext();
+            }
+            now = now->getNext();
+            tmp->deleteAnObject(address);
+        }
+        else if(now == start)
+        {
+            int amountObject = amountOfObjects();
+            if (amountObject == 1)
+            {
+                start->~carInfo();
+            }
+            else
+            {
+                tmp = now;
+                start = start->getNext();
+                delete tmp;
+                now = start;
+            }
+        }
+        
+        
+        
+        /*carInfo* tmp = nullptr;
         carInfo* address;
         if (now != start) 
         {
             tmp = start;
-            while (tmp->next != now)
+            while (tmp->getNext() != now)
             {
-                tmp = tmp->next;
+                tmp = tmp->getNext();
             }
             address = now->getNext();
             now = tmp;
@@ -407,7 +454,7 @@ public:
                 delete tmp;
                 now = start;
             }
-        }
+        }*/
     }
 
 };
